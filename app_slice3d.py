@@ -7,7 +7,7 @@ import numpy as np
 ti.init(arch=ti.gpu)
 
 # Load 3d grayscale volume where each voxel is a single byte (uint8) in file.
-cube_side = 512
+cube_side = 256
 slice_shape = (cube_side, cube_side)
 cube_shape = (cube_side, cube_side, cube_side)
 filename = f'data/hemibrain_subvol_{cube_side}x{cube_side}x{cube_side}.bin'
